@@ -416,7 +416,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
       Schema.Attribute.DefaultTo<true>;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     color: Schema.Attribute.Enumeration<
-      ['Green', 'Blue', 'Red', 'Multi-color']
+      ['Green', 'Blue', 'Red', 'Mono-color', 'Multi-color']
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
